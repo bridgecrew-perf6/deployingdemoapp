@@ -18,7 +18,6 @@ var commentRoutes    = require('./routes/comments'),
 
    // DB config
 mongoose.connect(process.env.DATABASEURL);
-// mongoose.connect("mongodb+srv://emmyzee45:iorolun45@cluster0.seizo.mongodb.net/?retryWrites=true&w=majority");
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.set('view engine', 'ejs');
