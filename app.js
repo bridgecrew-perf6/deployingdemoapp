@@ -17,7 +17,7 @@ var commentRoutes    = require('./routes/comments'),
     campgroundRoutes = require('./routes/campgrounds'),
     indexRoutes      = require('./routes/index');
 
-mongoose.connect('mongodb://localhost/yelcamp6')
+mongoose.connect('mongodb+srv://emmyzee45:<iorolun45>@cluster0.seizo.mongodb.net/?retryWrites=true&w=majority')
 let db = mongoose.connection
 
 db.once('open', function(){
