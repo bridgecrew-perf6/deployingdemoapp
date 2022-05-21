@@ -6,7 +6,6 @@ var express = require('express'),
     LocalStrategy = require('passport-local');
     methodOverride = require('method-override');
     User    = require('./models/user');
-    seedDB = require('./seeds'),
     Campground = require('./models/campground'),
     Comment  = require('./models/comment'),
     path = require('path'),
@@ -34,7 +33,7 @@ app.use(express.static(__dirname + '/public'));
 app.use(express.static(__dirname + '/node_modules'));
 app.use(methodOverride('_method')); 
 app.use(flash()); 
-//seedDB();
+
 
 // PASSPORT CONFIGURATION
 app.use(require('express-session')({
