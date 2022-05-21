@@ -1,0 +1,49 @@
+
+.thumbnail img {
+    width: 100%;
+}
+.thumbnail {
+    padding: 0%;
+    border: 2px solid lightgrey;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+.thumbnail .caption-full {
+    padding: 9px;
+}
+.thumbnail .caption-full .pull-right{
+    text-align: right;
+}
+.well {
+    background-color: lightgrey;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    padding: 10px;
+
+}
+.well .text-right {
+    text-align: right;
+    padding-top: 10px;
+}
+.well .row .col-md-12 .pull-right{
+    text-align: right;
+}
+#delete-form{
+    display:inline;
+}
+h4 a {
+    text-decoration: none;
+}
+#false-container{
+    background-color: rgb(247, 245, 245);
+}
+.jumbotron {
+    padding: 20px;
+    padding-left: 50px;
+    margin:25px;
+
+}
+header.jumbotron div.container h1 {
+    font-weight: 700%;
+    font-size: 4em;
+}

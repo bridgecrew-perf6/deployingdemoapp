@@ -15,17 +15,9 @@ var express = require('express'),
 var commentRoutes    = require('./routes/comments'),
     campgroundRoutes = require('./routes/campgrounds'),
     indexRoutes      = require('./routes/index');
-
-mongoose.connect('mongodb+srv://emmyzee45:<iorolun45>@cluster0.seizo.mongodb.net/?retryWrites=true&w=majority')
-let db = mongoose.connection
-
-db.once('open', function(){
-    console.log('mongodb is connected')
-});
-db.on('error', function(err){
-    console.log(err)
-});
-
+    
+   // DB config
+mongoose.connect("mongodb+srv://emmyzee45:iorolun45@cluster0.seizo.mongodb.net/?retryWrites=true&w=majority");
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.set('view engine', 'ejs');
